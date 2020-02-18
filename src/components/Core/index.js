@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
+import { Parallax } from 'react-scroll-parallax';
 
 import Profile from '../Profile'
 import Skill from '../Skill'
-import Experience from '../Experience'
+import Social from '../Social'
 export default class Index extends Component {
   render() {
     return (
       <React.Fragment>
-        <Profile />
-        <div className="d-flex justify-content-around mt-4">
+        <Parallax className="custom-class" y={[-60, 30]} tagOuter="figure">
+          <Profile />
+        </Parallax>
+         <Parallax className="custom-class" y={[-20, 5]} tagOuter="figure">
           <Skill />
-          <Experience />
-        </div>
+        </Parallax>
+         <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+          <Social />
+        </Parallax>
       </React.Fragment>
     )
   }
