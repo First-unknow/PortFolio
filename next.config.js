@@ -30,7 +30,7 @@
 //       .catch(console.error)
 //     return path
 //   }
-}
+// }
 
 const path = {
   "/": { 
