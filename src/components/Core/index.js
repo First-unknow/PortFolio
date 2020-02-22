@@ -12,10 +12,10 @@ export default class Index extends Component {
             <Parallax className="custom-class" y={[-40, 30]} tagOuter="figure">
               <Profile />
             </Parallax>
-            <Parallax className="custom-class" y={[-10, 5]} tagOuter="figure">
+            <Parallax className="custom-class" y={[-10, 0]} tagOuter="figure">
               <Skill />
             </Parallax>
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+            <Parallax className="custom-class" y={[-20, 10]} tagOuter="figure">
               <Social />
             </Parallax>
           </React.Fragment> 
