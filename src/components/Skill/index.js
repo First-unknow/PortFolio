@@ -9,7 +9,7 @@ const Div = styled.div`
 
 const ReBox = styled(Box)`
   color: white;
-  height: 90vh;
+  height: 100%;
 `
 
 const Img = styled.img`
@@ -40,7 +40,7 @@ export default class Index extends Component {
   render() {
     return (
       <ReBox background="#164563" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0 pb-5">
-        <div className="flex-column col-12 col-md-6 text-center p-2 mt-5 mt-lg-0">
+        <div className="flex-column col-12 col-md-6 text-center p-2 mt-5 pt-5 mt-lg-0">
           <h2>My Skill</h2>
           <h5 className="mt-3">Front-End</h5>
           <div className="row">
@@ -71,8 +71,6 @@ export default class Index extends Component {
         <Div className="flex-column col-12 col-md-4 text-center mt-3 mt-md-0 pb-3 pb-md-0">
           <h2>My Experience</h2>
           <div className="text-md-left mt-4">
-            {/* Git Hub : <a href="https://github.com/First-unknow"> First-Unknow</a>  <br /> */}
-
             <h5>WIP Developer for WIP Camp</h5>
             <h6 className="mt-3">WIP Camp 11</h6>
             Web PR <br />
