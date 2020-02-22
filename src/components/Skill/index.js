@@ -55,7 +55,7 @@ export default class Index extends Component {
           }
           </div>
 
-          <h5 className="mt-5">Back-End</h5>
+          <h5 className="mt-1 mt-lg-5">Back-End</h5>
           <div className="d-flex justify-content-center">
           <LogoSkill
             className="col-12"
