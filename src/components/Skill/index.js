@@ -4,10 +4,11 @@ import styled from 'styled-components'
 import Box from '../Core/Box'
 
 const Div = styled.div`
-  background-color:#FFABAB;
+  background-color:#164563;
 `
 
 const ReBox = styled(Box)`
+  color: white;
   height: 90vh;
 `
 
@@ -38,7 +39,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <ReBox background="#FFABAB" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0">
+      <ReBox background="#164563" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0 pb-5">
         <div className="flex-column col-12 col-md-6 text-center p-2">
           <h2>My Skill</h2>
           <h5 className="mt-3">Front-End</h5>
