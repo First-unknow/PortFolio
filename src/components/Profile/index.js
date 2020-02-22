@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import dayjs from 'dayjs'
+// import dayjs from 'dayjs'
 
 import Box from '../Core/Box.js'
 
 // const datenow = dayjs.format('DD-MM-YYY')
 // const birthday = dayjs('25-11-1999')
 
-const Img = styled.img`
-  border-radius:50%;
-  height:auto;
-`
 
 const Link = styled.a`
   /* color:black; */
