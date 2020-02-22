@@ -8,15 +8,17 @@ export default class Index extends Component {
   render() {
     return (
       <React.Fragment>
-        <Parallax className="custom-class" y={[-60, 30]} tagOuter="figure">
-          <Profile />
-        </Parallax>
-         <Parallax className="custom-class" y={[-20, 5]} tagOuter="figure">
-          <Skill />
-        </Parallax>
-         <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-          <Social />
-        </Parallax>
+          <React.Fragment>
+            <Parallax className="custom-class" y={[-40, 30]} tagOuter="figure">
+              <Profile />
+            </Parallax>
+            <Parallax className="custom-class" y={[-10, 5]} tagOuter="figure">
+              <Skill />
+            </Parallax>
+            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+              <Social />
+            </Parallax>
+          </React.Fragment> 
       </React.Fragment>
     )
   }
