@@ -47,6 +47,9 @@ const BlackDrop = styled.div`
   @media (max-width:991px) {
     height: auto;
   }
+  @media (max-width:768px) {
+    padding-bottom: 2rem !important;
+  }
 `
 
 export default class Index extends Component {
