@@ -46,7 +46,7 @@ const QouteDiv = styled.div`
 `
 
 const BlackDrop = styled.div`
-  margin-top:4em;
+  margin-top:6em;
   backdrop-filter: blur(5px) contrast(.8);
 `
 
