@@ -10,7 +10,7 @@ const Div = styled.div`
 export default class Index extends Component {
   render() {
     return (
-      <Box color="#545454" className="row justify-content-md-around justify-content-center w-100 m-0">
+      <Box background="#545454" className="row justify-content-md-around justify-content-center w-100 m-0">
             <div className="flex-column col-12 col-md-6 text-center">
               <h2>My Skill</h2>
               <h5 className="mt-3">Front-End</h5>
