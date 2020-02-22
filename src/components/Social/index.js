@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Box from '../Core/Box'
 
 const ReBox = styled(Box)`
-  /* color: white; */
+  color: white;
   height:100%;
   margin-top: -5em!important;
   padding-top: 5em;
@@ -14,7 +14,7 @@ const ReBox = styled(Box)`
 `
 
 const Link = styled.a`
-  color:#000000;
+  color: white;
   &:hover{
     color:gray;
     text-decoration:none;
@@ -58,8 +58,8 @@ export default class Index extends Component {
 
   render() {
     return (
-      <ReBox background="#1645" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0 pb-5">
-        <div className="flex-column col-12 col-md-6 text-center p-2">
+      <ReBox background="#113952" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0 pb-5">
+        <div className="flex-column col-12 col-md-6 text-center p-2 pt-3">
           <h2>My Hobby</h2>
           <div className="row">
             {
@@ -77,7 +77,7 @@ export default class Index extends Component {
 
         </div>
 
-        <div className="flex-column col-12 col-md-4 text-center mt-3 mt-md-0 pb-3 pb-md-0">
+        <div className="flex-column col-12 col-md-4 text-center mt-3 mt-md-0 pb-3 pb-md-0 pt-4">
           <h2>My Social</h2>
           <div className="row">
             {
