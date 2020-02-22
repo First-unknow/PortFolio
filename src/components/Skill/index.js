@@ -47,6 +47,7 @@ export default class Index extends Component {
           {
             this.state.FE.map((data, i) => (
               <LogoSkill 
+                key={i}
                 className="col-12 col-lg-6 mt-3"
                 src={`/images/skill/${data.img}.png`} 
                 text={data.text}

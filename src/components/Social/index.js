@@ -65,6 +65,7 @@ export default class Index extends Component {
             {
               this.state.Hobby.map((data, i) => (
                 <LogoSkill
+                  key={i}
                   className={`col-12 mt-5 ${i === 4 ? "col-lg-12" : "col-lg-6"}`}
                   src={`/images/hobby/${data.img}.png`}
                   text={data.text}
@@ -82,6 +83,7 @@ export default class Index extends Component {
             {
               this.state.Social.map((data, i) => (
                 <LogoSkill
+                  key={i}
                   href= {data.href}
                   className={`col-12 mt-5 ${i === 4 ? "col-lg-12" : "col-lg-6"}`}
                   src={`/images/social/${data.img}.png`}
