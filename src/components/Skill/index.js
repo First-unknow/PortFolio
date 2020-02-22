@@ -74,15 +74,15 @@ export default class Index extends Component {
           <div className="text-md-left mt-4">
             <h5>WIP Developer for WIP Camp</h5>
             <h6 className="mt-3">WIP Camp 11</h6>
-            Web PR <br />
+            - Develop Web PR <br />
 
             <h6 className="mt-3">WIP Camp 12</h6>
-            Web for Register <br />
-            Web Staff for Select Participants and Manage in Camp<br />
-            Project Manager and Consultant for Web PR <br />
+            - Develop Web for Register <br />
+            - Develop Web Staff for Select Participants and Manage in Camp<br />
+            - Project Manager and Consultant for Web PR <br />
 
             <h5 className="mt-3">Hello World Cockateil</h5>
-            Web Developer and Project Manager for Web PR
+            - Web Developer and Project Manager for Web PR
             </div>
 
         </Div>
