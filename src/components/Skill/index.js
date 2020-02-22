@@ -47,7 +47,7 @@ export default class Index extends Component {
           {
             this.state.FE.map((data, i) => (
               <LogoSkill 
-                className="col-12 col-lg-6"
+                className="col-12 col-lg-6 mt-3"
                 src={`/images/skill/${data.img}.png`} 
                 text={data.text}
                 size={ data.img === 'html' || data.img === 'Angular' || data.img === 'react' ? '75px' : '64px' } 
@@ -70,8 +70,8 @@ export default class Index extends Component {
 
         <Div className="flex-column col-12 col-md-4 text-center mt-3 mt-md-0 pb-3 pb-md-0">
           <h2>My Experience</h2>
-          <div className="text-md-left">
-            Git Hub : <a href="https://github.com/First-unknow"> First-Unknow</a>  <br />
+          <div className="text-md-left mt-4">
+            {/* Git Hub : <a href="https://github.com/First-unknow"> First-Unknow</a>  <br /> */}
 
             <h5>WIP Developer for WIP Camp</h5>
             <h6 className="mt-3">WIP Camp 11</h6>
