@@ -54,8 +54,8 @@ export default class Index extends Component {
                 Birthday: 25 November 1999 <br />
                 <div className="pr-0 pl-0">Currently study in Bachelor degree of Information Technology year 2<sup>nd</sup> , School of Information Technology at KMUTT</div>
                 <div className="w-100 d-flex justify-content-around mt-2">
-                  <Button href="https://drive.google.com/open?id=1BLeI-b5S69_URyTh7Dpk9k0j-FdzsFEq" hover="Go" show="Resume"/>
-                  <Button href="#" hover="Go" show="TranScript"/>
+                  <Button href="https://drive.google.com/open?id=1BLeI-b5S69_URyTh7Dpk9k0j-FdzsFEq" hover="Resume" show="Resume"/>
+                  <Button href="#" hover="Resume" show="TranScript"/>
                 </div>
               </BlackDrop>
             </Div>
