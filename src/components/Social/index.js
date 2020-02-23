@@ -52,7 +52,9 @@ export default class Index extends Component {
       { img: 'ig', text: 'Instagram', href: 'https://www.instagram.com/first_natthasit/' },
       { img: 'GitHub', text: 'GitHub', href: 'https://github.com/First-unknow'},
       { img: 'LinkedIn', text: 'LinkedIn', href: 'https://www.linkedin.com/in/natthasit-panjapornpol-0883a5155/' },
-      { img: 'gitlab', text: 'GitLab', href: 'https://gitlab.com/First-unknow' }
+      // { img: 'gitlab', text: 'GitLab', href: 'https://gitlab.com/First-unknow' }
+      { img: 'mail', text: 'firstpan555@gmail.com', href: 'mailto:firstpan555@gmail.com' },
+      { img: 'phone', text: '0969622249', href: 'tel://0969622249' }
     ]
   }
 
@@ -85,7 +87,7 @@ export default class Index extends Component {
                 <LogoSkill
                   key={i}
                   href= {data.href}
-                  className={`col-12 mt-5 ${i === 4 ? "col-lg-12" : "col-lg-6"}`}
+                  className={`col-12 mt-5 ${i === 4 || i === 5 ? "col-lg-12" : "col-lg-6"}`}
                   src={`/images/social/${data.img}.png`}
                   text={data.text}
                 />

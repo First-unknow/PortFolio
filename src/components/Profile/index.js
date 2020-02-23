@@ -7,16 +7,6 @@ import Box from '../Core/Box.js'
 // const datenow = dayjs.format('DD-MM-YYY')
 // const birthday = dayjs('25-11-1999')
 
-
-const Link = styled.a`
-  /* color:black; */
-  color:#000000;
-  &:hover{
-    color:gray;
-    text-decoration:none;
-  }
-`
-
 const Div = styled.div`
   color:#000000;
   font-weight:bold;
@@ -64,8 +54,6 @@ export default class Index extends Component {
                 Name: Natthasit Panjapornpol <br />
                 Age: 20 years <br />
                 Birthday: 25 November 1999 <br />
-                Email: <Link href="mailto:firstpan555@gmail.com">firstpan555@gmail.com</Link>
-                Telephone Number: <Link href="tel://0969622249">096962249</Link>
                 <div className="pr-0 pr-md-5 pl-0 pl-md-0">Cerrently study in Bachelor degree of Information Technology year 2<sup>nd</sup> , School of Information Technology at KMUTT</div>
               </BlackDrop>
             </Div>
