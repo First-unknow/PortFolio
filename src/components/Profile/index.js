@@ -48,7 +48,7 @@ export default class Index extends Component {
           <div className="justify-content-center text-center justify-content-lg-between align-items-lg-center row w-100">
             <Qoute className="col-12 col-lg-4 mt-2 mt-lg-0 ml-3 mr-3 px-5 pr-lg-5 d-flex align-items-center"><b className="text-center pr-2 pl-2">" If fear to fail,  your skill doesn’t improve "</b></Qoute>
             <Div className="col-12 col-lg-4 p-0 d-flex align-items-end ">
-              <BlackDrop className="flex-column text-center ml-2 px-5 py-3 p-lg-5 d-flex justify-content-center align-items-lg-center">
+              <BlackDrop className="flex-column text-center ml-3 px-5 py-3 p-lg-5 d-flex justify-content-center align-items-lg-center">
                 Name: Natthasit Panjapornpol <br />
                 Age: 20 years <br />  
                 Birthday: 25 November 1999 <br />
