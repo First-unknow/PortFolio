@@ -46,7 +46,7 @@ const ButtonLink = styled.a`
   }
   div{
     position: relative;
-    top: 16px;
+    top: 12.5px;
     width: 100%;
     height: 26px;
     text-transform: uppercase;
