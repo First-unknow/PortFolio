@@ -41,7 +41,7 @@ export default class Index extends Component {
 
   state = {
     Hobby: [
-      { img: 'nintendo', text: 'Play Vedio Game' },
+      { img: 'nintendo', text: 'Play Video Game' },
       { img: 'books', text: 'Read Fiction' },
       { img: 'netflix', text: 'Watch Netflix ' },
       { img: 'youtube', text: 'Watch Youtube ' },
