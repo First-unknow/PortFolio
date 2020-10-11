@@ -18,7 +18,9 @@ const ButtonLink = styled.a`
   border-radius:20px;
   @media (max-width:400px) {
     height: 48px;
-    font-size: 14px;
+  }
+  @media (max-width:320px) {
+    height: 40px;
   }
   &:before{
     content: '';
@@ -55,10 +57,11 @@ const ButtonLink = styled.a`
   span{
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 3px;
     width: 100%;
     text-align: center;
     transition: transform .5s ease;
+    font-size:15px;
     &:first-child{
       color: white;
       transform: translateY(24px);
@@ -66,6 +69,15 @@ const ButtonLink = styled.a`
     &:last-child{
       color: #1E0F21;
       transform: translateY(0);
+    }
+    @media (max-width:420px) {
+      font-size:14px;
+    }
+    @media (max-width:375px) {
+      font-size:12px;
+    }
+    @media (max-width:320px) {
+      font-size:9px;
     }
   }
   &:hover{
