@@ -18,7 +18,7 @@ const Img = styled.img`
 `
 
 const LogoSkill = (props) => (
-  <div className={`col-12 col-lg-6 ${props.className}`}>
+  <div className={`${props.className} col-12 mt-3`}>
     <Img src={props.src} className="mt-1 col-6 text-right" size={props.size} />
     <span className="col-6">{props.text}</span><br />
   </div>
@@ -32,61 +32,89 @@ export default class Index extends Component {
       { img: 'css', text: 'CSS: Advance' },
       { img: 'Bootstrap', text: 'Bootstrap: Advance' },
       { img: 'react', text: 'React: Advance' },
-      { img: 'vue', text: 'Vue: Normal' },
+      { img: 'vue', text: 'Vue: Advance' },
       { img: 'Angular', text: 'Angular: Beginner' },
-    ]
+    ],
+    BE: [
+      { img: 'java', text: 'Java : Normal' },
+      { img: 'python', text: 'Python : Normal' },
+    ],
+    MA: { img: 'flutter', text: 'Flutter : Normal' }
   }
 
   render() {
     return (
-      <ReBox background="#164563" className="row justify-content-md-around justify-content-center align-items-center w-100 m-0 pb-5">
-        <div className="flex-column col-12 col-md-6 text-center p-2 mt-5 pt-5 mt-lg-0">
+      <ReBox background="#164563" className="row justify-content-md-between justify-content-center align-items-center w-100 m-0 pb-5 pt-3">
+        <div class="col-12 col-md-6 text-center p-2 mt-5 pt-5 mt-lg-0">
           <h2>My Skill</h2>
-          <h5 className="mt-3">Front-End</h5>
           <div className="row">
-          {
-            this.state.FE.map((data, i) => (
-              <LogoSkill 
-                key={i}
-                className="col-12 col-lg-6 mt-3"
-                src={`/images/skill/${data.img}.png`} 
-                text={data.text}
-                size={ data.img === 'html' || data.img === 'Angular' || data.img === 'react' ? '75px' : '64px' } 
-                />
-            ))
-          }
-          </div>
-
-          <h5 className="mt-1 mt-lg-5">Back-End</h5>
-          <div className="d-flex justify-content-center">
-          <LogoSkill
-            className="col-12"
-            src="/images/skill/java.png"
-            text="Java: Normal"
-            size="100px"
-          />
-          </div>
-
-        </div>
-
-        <Div className="flex-column col-12 col-md-4 text-center mt-3 mt-md-0 pb-3 pb-md-0">
-          <h2>My Experience</h2>
-          <div className="text-md-left mt-4">
-            <h5>WIP Developer for WIP Camp</h5>
-            <h6 className="mt-3">WIP Camp 11</h6>
-            - Develop Web PR <br />
-
-            <h6 className="mt-3">WIP Camp 12</h6>
-            - Develop Web for Register <br />
-            - Develop Web Staff for Select Participants and Manage in Camp<br />
-            - Project Manager and Consultant for Web PR <br />
-
-            <h5 className="mt-3">Hello World Cockateil</h5>
-            - Web Developer and Project Manager for Web PR
+            <div class="col-12 col-md-6">
+              <h4 className="text-center pl-4 mt-3">Front-End</h4>
+              <div className="row">
+                {
+                  this.state.FE.map((data, i) => (
+                    <LogoSkill
+                      key={i}
+                      className="pl-4 text-center"
+                      src={`/images/skill/${data.img}.png`}
+                      text={data.text}
+                      size={data.img === 'html' || data.img === 'Angular' || data.img === 'react' ? '75px' : '64px'}
+                    />
+                  ))
+                }
+              </div>
             </div>
 
-        </Div>
+            <div class="col-12 col-md-6">
+              <h4 className="text-center pl-4 mt-3">Back-End</h4>
+                <div className="row">
+                  {
+                    this.state.BE.map((data, i) => (
+                      <LogoSkill
+                        key={i}
+                        className="pl-2 text-center"
+                        src={`/images/skill/${data.img}.png`}
+                        text={data.text}
+                        size="100px"
+                      />
+                    ))
+                  }
+                </div>
+              <h4 className="text-center pl-4 mt-5">Mobile Application</h4>
+                <div className="row">
+                      <LogoSkill
+                        className="pl-2 text-center"
+                        src={`/images/skill/${this.state.MA.img}.png`}
+                        text={this.state.MA.text}
+                        size="100px"
+                      />
+                </div>
+            </div>
+          </div>
+        </div>
 
+        <Div className="flex-column col-12 col-md-4 text-center mt-5 pb-3 pb-md-0">
+          <h2>My Experience</h2>
+          <div className="text-md-left mt-4">
+            <h4>2018</h4>
+              <h5 className="pl-2">React</h5>
+                <div className="pl-4">- Web PR for WIPCamp 11</div>
+            <h4>2019</h4>
+              <h5 className="pl-2">React</h5>
+                <div className="pl-4">- Web PR for Helloworld Cockatiel</div>
+                <div className="pl-4">- Web Register for WIPCamp 12</div>
+              <h5 className="pl-2">Project Manager</h5>
+                <div className="pl-4">- Web PR for WIPCamp 12</div>
+                <div className="pl-4">- Web PR for Helloworld Cockatiel</div>
+
+            <h4>2020</h4>
+              <h5 className="pl-2">React</h5>
+                <div className="pl-4">- Web Management for WIPCamp 12</div>
+              <h5 className="pl-2">Vue</h5>
+                <div className="pl-4">- Front End Developer Internship with Backyard Co., Ltd</div>
+                <div className="pl-4">- Freelance</div>
+            </div>
+        </Div>
       </ReBox>
     )
   }
