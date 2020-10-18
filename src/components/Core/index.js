@@ -43,7 +43,7 @@ export default class Index extends Component {
               {matches => (
                 <React.Fragment>
                   {matches.small &&
-                    <Parallax className="custom-class" y={[-8, 0]} styleOuter={{ marginTop: '2.5em' }} tagOuter="figure">
+                    <Parallax className="custom-class" y={[-6, 0]} styleOuter={{ marginTop: '2.5em' }} tagOuter="figure">
                       <Skill />
                     </Parallax>
                   }
