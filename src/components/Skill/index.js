@@ -13,13 +13,13 @@ const ReBox = styled(Box)`
 `
 
 const Img = styled.img`
-  width:${props => props.size};
+  width:auto;
   height:auto;
 `
 
 const LogoSkill = (props) => (
   <div className={`${props.className} col-12 mt-3`}>
-    <Img src={props.src} className="mt-1 col-6 text-right" size={props.size} />
+    <Img src={props.src} className="mt-1 col-6 text-right" />
     <span className="col-6">{props.text}</span><br />
   </div>
 )
@@ -58,7 +58,6 @@ export default class Index extends Component {
                       className="pl-4 text-center"
                       src={`/images/skill/${data.img}.png`}
                       text={data.text}
-                      size={data.img === 'html' || data.img === 'Angular' || data.img === 'react' ? '75px' : '64px'}
                     />
                   ))
                 }
@@ -75,7 +74,6 @@ export default class Index extends Component {
                         className="pl-2 text-center"
                         src={`/images/skill/${data.img}.png`}
                         text={data.text}
-                        size="100px"
                       />
                     ))
                   }
@@ -86,7 +84,6 @@ export default class Index extends Component {
                         className="pl-2 text-center"
                         src={`/images/skill/${this.state.MA.img}.png`}
                         text={this.state.MA.text}
-                        size="100px"
                       />
                 </div>
             </div>
